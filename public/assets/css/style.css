@@ -1,0 +1,192 @@
+/*
+|--------------------------------------------------------------------------
+| Custom Styles for ASH SHAFA Website
+|--------------------------------------------------------------------------
+| File ini melengkapi styling dari Tailwind CSS
+| untuk memberikan sentuhan akhir, transisi, dan konsistensi branding.
+*/
+
+/* 1. Kustomisasi Font (Opsional: Jika tidak menggunakan CDN font) */
+/* Disarankan menggunakan font yang elegan namun mudah dibaca, seperti 'Poppins' atau 'Inter' */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #4B5563; /* Warna teks utama (shafa-text) */
+}
+
+/* 2. Styling Navigasi Utama */
+/* Memberikan transisi halus pada link navigasi */
+nav a {
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+/* Dropdown Menu Styling (Jika tidak di-handle sepenuhnya oleh Tailwind) */
+.group:hover .group-hover\:block {
+    display: block !important;
+}
+
+/* 3. Hero Section (Banner) */
+/* Memastikan teks tetap terbaca di atas gambar latar */
+#home h1, #home p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* 4. Card Paket Layanan (Hover Effect) */
+/* Memberikan efek mengangkat yang halus saat kursor diarahkan ke card paket */
+.paket-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.paket-card:hover {
+    transform: translateY(-8px); /* Card terangkat 8px */
+    box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.paket-card button {
+    transition: background-color 0.3s ease;
+}
+
+/* 5. Styling Form Request Paket */
+/* Memastikan input field memiliki fokus yang jelas dengan warna branding */
+#custom-request-form input:focus,
+#custom-request-form textarea:focus {
+    border-color: #7A0505; /* shafa-primary */
+    box-shadow: 0 0 0 3px rgba(122, 5, 5, 0.3); /* Ring fokus lembut */
+}
+
+/* 6. Section Fasilitas (Halaman 9 PDF) */
+/* Styling kustom untuk ikon box di bagian fasilitas */
+#fasilitas .shadow-lg {
+    transition: box-shadow 0.3s ease;
+}
+
+#fasilitas .shadow-lg:hover {
+    box-shadow: 0 4px 6px -1px rgba(122, 5, 5, 0.1), 0 2px 4px -2px rgba(122, 5, 5, 0.06);
+    cursor: default;
+}
+
+/* 7. Footer dan Social Media Icons */
+.footer a {
+    transition: color 0.2s ease-in-out;
+}
+
+.footer a:hover {
+    color: #FDD835; /* shafa-secondary untuk aksen hover */
+}
+
+/* Utility Class Tambahan */
+/* Class untuk membersihkan float (optional, mostly covered by Tailwind flex/grid) */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Menyesuaikan Progress Bar (Jika ada modifikasi dari default Tailwind) */
+.m-list-paket-sisa-seat-bar-inner {
+    transition: width 0.5s ease-out;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
+/* === FONT ARABIC === */
+.font-arabic {
+  font-family: 'Amiri', serif;
+  direction: rtl;
+}
+
+/* === TYPEWRITER === */
+@keyframes typewriter-ltr {
+  from { clip-path: inset(0 100% 0 0); }
+  to { clip-path: inset(0 0 0 0); }
+}
+
+@keyframes typewriter-rtl {
+  from { clip-path: inset(0 0 0 100%); }
+  to { clip-path: inset(0 0 0 0); }
+}
+
+/* === FADE-UP === */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === HERO TEKS === */
+.hero {
+  text-align: center;
+  overflow: hidden;
+  color: white;
+}
+
+.hero h1,
+.hero p,
+.hero .font-arabic,
+.hero a {
+  opacity: 0;
+}
+
+/* --- ARABIC TEXT TYPEWRITER RTL --- */
+.bismillah-typewriter-rtl {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+    typewriter-rtl 2s steps(40) 0s forwards,
+    fade-up 1.2s ease 0s forwards;
+}
+
+/* --- JUDUL UTAMA TYPEWRITER LTR --- */
+.title-typewriter {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+    typewriter-ltr 1.8s steps(40) 2s forwards,
+    fade-up 1s ease 2s forwards;
+}
+
+/* --- SUBTITLE TYPEWRITER --- */
+.subtitle-1-typewriter {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+    typewriter-ltr 1.5s steps(40) 3.8s forwards,
+    fade-up 1s ease 3.8s forwards;
+}
+
+.subtitle-2-typewriter {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+    typewriter-ltr 1.5s steps(40) 5.2s forwards,
+    fade-up 1s ease 5.2s forwards;
+}
+
+/* --- CTA BUTTON --- */
+.cta-fade {
+  display: inline-block;
+  opacity: 0;
+  margin-top: 2.5rem;
+  animation: fade-up 1.2s ease 6.5s forwards;
+}
+
+/* --- TRUST TEXT --- */
+.trust-typewriter {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+    typewriter-ltr 1.5s steps(40) 7.8s forwards,
+    fade-up 1s ease 7.8s forwards;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .title-typewriter { font-size: 1.3rem; white-space: normal; }
+  .subtitle-1-typewriter,
+  .subtitle-2-typewriter,
+  .trust-typewriter { font-size: 1rem; white-space: normal; }
+}
+

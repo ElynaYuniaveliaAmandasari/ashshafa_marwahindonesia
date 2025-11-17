@@ -1,0 +1,649 @@
+/*
+ * Shafa Theme Colors
+ * Warna-warna utama untuk tema Shafa
+ */
+
+:root {
+    /* Shafa Primary Color - Merah Maroon (#7A0000) */
+    --shafa-primary: #7A0000;
+    --shafa-primary-dark: #5A0000;
+    --shafa-primary-light: #9A2B2B;
+
+    /* Shafa Secondary Color - Oranye (#FF9A00) */
+    --shafa-secondary: #FF9A00;
+    --shafa-secondary-dark: #CC7A00;
+    --shafa-secondary-light: #FFAD33;
+
+    /* Shafa Dark Text Color - Abu-abu Gelap (#0F1011) */
+    --shafa-dark-text: #0F1011;
+    --shafa-text: #4B5563;
+
+    /* Shafa Background Hero - Merah Tua (#8A1515) */
+    --shafa-bg-hero: #8A1515;
+    --shafa-bg-hero-dark: #6B1010;
+    --shafa-bg-hero-light: #A93A3A;
+}
+
+/* Bootstrap Override untuk warna primary */
+.bg-primary,
+.btn-primary,
+.badge-primary,
+.alert-primary,
+.progress-bar,
+.navbar.navbar-primary,
+.page-link,
+.table-primary,
+.list-group-item-primary {
+    background-color: var(--shafa-primary) !important;
+    border-color: var(--shafa-primary) !important;
+}
+
+.card-header {
+    background-color: var(--shafa-primary) !important;
+    border-color: var(--shafa-primary) !important;
+    color: #ffffff !important;
+}
+
+/* Ensure headings inside card-header are also white, overriding general heading styles */
+.card-header h1,
+.card-header h2,
+.card-header h3,
+.card-header h4,
+.card-header h5,
+.card-header h6,
+.card-header .card-title {
+    color: #ffffff !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: var(--shafa-primary-dark) !important;
+    border-color: var(--shafa-primary-dark) !important;
+}
+
+.text-primary,
+.nav-tabs .nav-link.active,
+.nav-pills .nav-link.active,
+.breadcrumb-item.active,
+.page-link:hover,
+.page-link:focus {
+    color: var(--shafa-primary) !important;
+}
+
+.border-primary {
+    border-color: var(--shafa-primary) !important;
+}
+
+/* Bootstrap Override untuk warna secondary */
+.bg-secondary,
+.btn-secondary,
+.badge-secondary,
+.alert-secondary,
+.list-group-item-secondary {
+    background-color: var(--shafa-secondary) !important;
+    border-color: var(--shafa-secondary) !important;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+    background-color: var(--shafa-secondary-dark) !important;
+    border-color: var(--shafa-secondary-dark) !important;
+}
+
+.text-secondary {
+    color: var(--shafa-secondary) !important;
+}
+
+.border-secondary {
+    border-color: var(--shafa-secondary) !important;
+}
+
+/* Warna teks gelap */
+.text-dark,
+.card-title,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--shafa-dark-text) !important;
+}
+
+/* Background hero */
+.bg-hero {
+    background-color: var(--shafa-bg-hero) !important;
+}
+
+/* Warna teks umum */
+.text-color,
+body,
+p,
+.text-body,
+.card-text {
+    color: var(--shafa-text) !important;
+}
+
+/* Sidebar dengan warna Shafa */
+.left-sidebar.sidebar-shafa {
+    background-color: var(--shafa-bg-hero) !important;
+}
+
+.left-sidebar.sidebar-shafa .app-brand .brand-name {
+    color: #ffffff !important;
+}
+
+.left-sidebar.sidebar-shafa .sidebar .sidebar-inner>li>a {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.left-sidebar.sidebar-shafa .sidebar .sidebar-inner>li.active>a {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.left-sidebar.sidebar-shafa .sidebar .sidebar-inner .section-title {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Navbar dengan tema Shafa */
+.navbar.navbar-shafa {
+    background-color: var(--shafa-primary) !important;
+    border-color: transparent;
+}
+
+body.theme-shafa .navbar .sidebar-toggle,
+body.theme-shafa .navbar .sidebar-offcanvas-toggle {
+    color: #ffffff !important;
+}
+
+body.theme-shafa .navbar .sidebar-toggle:before,
+body.theme-shafa .navbar .sidebar-offcanvas-toggle:before {
+    color: #ffffff !important;
+}
+
+.navbar.navbar-shafa .page-title {
+    color: #ffffff !important;
+}
+
+
+body.theme-shafa .navbar .sidebar-toggle:before {
+    color: #ffffff !important;
+}
+
+body.theme-shafa .navbar .navbar-right .navbar-nav .user-menu .dropdown-toggle>span,
+body.theme-shafa .navbar .navbar-right .navbar-nav .user-menu .dropdown-toggle i {
+    color: #ffffff !important;
+}
+
+body.theme-shafa .navbar .navbar-right .navbar-nav .user-menu .dropdown-toggle {
+    color: #ffffff !important;
+}
+
+.navbar.navbar-shafa .custom-dropdown .custom-dropdown-toggler .icon {
+    color: #ffffff !important;
+}
+
+/* Tombol dengan tema Shafa */
+.btn-shafa-primary {
+    color: #ffffff !important;
+    background-color: var(--shafa-primary);
+    border-color: var(--shafa-primary);
+}
+
+.btn-shafa-primary:hover {
+    color: #ffffff !important;
+    background-color: var(--shafa-primary-dark);
+    border-color: var(--shafa-primary-dark);
+}
+
+.btn-shafa-secondary {
+    color: #ffffff;
+    background-color: var(--shafa-secondary);
+    border-color: var(--shafa-secondary);
+}
+
+.btn-shafa-secondary:hover {
+    color: #ffffff;
+    background-color: var(--shafa-secondary-dark);
+    border-color: var(--shafa-secondary-dark);
+}
+
+/* Card dengan tema Shafa */
+.card.card-shafa {
+    border: 1px solid var(--shafa-primary);
+}
+
+.card.card-shafa .card-header {
+    background-color: var(--shafa-primary);
+    color: #ffffff;
+    border: none;
+}
+
+/* Link dengan tema Shafa */
+a,
+.nav-link,
+.text-primary {
+    color: var(--shafa-primary) !important;
+}
+
+
+a:hover,
+.nav-link:hover {
+    color: var(--shafa-primary-dark) !important;
+}
+
+/* Progress bar dengan tema Shafa */
+.progress-bar-shafa {
+    background-color: var(--shafa-primary);
+}
+
+/* Badge dengan tema Shafa */
+.badge-shafa-primary {
+    background-color: var(--shafa-primary);
+    color: #ffffff;
+}
+
+.badge-shafa-secondary {
+    background-color: var(--shafa-secondary);
+    color: #ffffff;
+}
+
+/* Alert dengan tema Shafa */
+.alert-shafa-primary {
+    background-color: rgba(122, 0, 0, 0.1);
+    border-color: var(--shafa-primary);
+    color: var(--shafa-primary);
+}
+
+.alert-shafa-secondary {
+    background-color: rgba(255, 154, 0, 0.1);
+    border-color: var(--shafa-secondary);
+    color: var(--shafa-secondary);
+}
+
+/* Custom Scrollbar untuk sidebar */
+.sidebar-scrollbar::-webkit-scrollbar-track {
+    background: var(--shafa-bg-hero);
+}
+
+.sidebar-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--shafa-primary-light);
+}
+
+/* Warna untuk status dan indikator */
+.status.active {
+    background-color: var(--shafa-primary) !important;
+}
+
+/* Gaya khusus untuk elemen header */
+.main-header {
+    background-color: var(--shafa-primary) !important;
+    color: #ffffff !important;
+}
+
+.main-header .page-title {
+    color: #ffffff !important;
+}
+
+
+/* Tombol navigasi */
+.btn-outline-shafa {
+    color: var(--shafa-primary);
+    border-color: var(--shafa-primary);
+}
+
+.btn-outline-shafa:hover {
+    background-color: var(--shafa-primary);
+    color: #ffffff;
+}
+
+/* Dropdown dengan tema Shafa */
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+    background-color: var(--shafa-primary-light);
+    color: #ffffff;
+}
+
+/* Tabel dengan tema Shafa */
+.table-shafa {
+    border: 1px solid var(--shafa-primary-light);
+}
+
+.table-shafa thead th {
+    background-color: var(--shafa-primary);
+    color: #ffffff;
+}
+
+/* Form control dengan tema Shafa */
+.form-control:focus {
+    border-color: var(--shafa-primary-light);
+    box-shadow: 0 0.2rem rgba(122, 0, 0, 0.25);
+}
+
+/* Switch dengan tema Shafa */
+.switch-shafa>.switch-input:checked~.switch-label {
+    background-color: var(--shafa-primary) !important;
+    border-color: var(--shafa-primary) !important;
+}
+
+.switch-shafa>.switch-input:checked~.switch-handle {
+    border-color: var(--shafa-primary) !important;
+}
+
+/* Modal dengan tema Shafa */
+.modal-content .modal-header {
+    background-color: var(--shafa-primary);
+    color: #ffffff;
+}
+
+/* Tooltip dengan tema Shafa */
+.tooltip-inner {
+    background-color: var(--shafa-primary);
+}
+
+.bs-tooltip-top .tooltip-arrow::before,
+.bs-tooltip-right .tooltip-arrow::before,
+.bs-tooltip-bottom .tooltip-arrow::before,
+.bs-tooltip-left .tooltip-arrow::before {
+    border-top-color: var(--shafa-primary);
+    border-right-color: var(--shafa-primary);
+    border-bottom-color: var(--shafa-primary);
+    border-left-color: var(--shafa-primary);
+}
+
+/* Popover dengan tema Shafa */
+.popover {
+    background-color: var(--shafa-bg-hero);
+    border: 1px solid var(--shafa-bg-hero);
+}
+
+.popover-header {
+    background-color: var(--shafa-primary);
+    color: #ffffff;
+    border-bottom: 1px solid var(--shafa-primary-dark);
+}
+
+/* Pagination dengan tema Shafa */
+.pagination .page-item.active .page-link {
+    background-color: var(--shafa-primary);
+    border-color: var(--shafa-primary);
+}
+
+.pagination .page-link:hover {
+    color: var(--shafa-primary-dark);
+}
+
+/* Breadcrumb dengan tema Shafa */
+.breadcrumb-item+.breadcrumb-item::before {
+    color: var(--shafa-primary);
+}
+
+.breadcrumb .breadcrumb-item.active {
+    color: var(--shafa-primary);
+}
+
+/* Custom checkbox dan radio */
+.custom-control-input:checked~.custom-control-label::before {
+    background-color: var(--shafa-primary);
+    border-color: var(--shafa-primary);
+}
+
+.custom-control-input:focus:not(:checked)~.custom-control-label::before {
+    border-color: var(--shafa-primary-light);
+}
+
+/* Select2 dengan tema Shafa */
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: var(--shafa-primary);
+}
+
+/* Warna-warna acak untuk kategori */
+.random-color-1 {
+    background-color: #3498db !important;
+    /* Biru */
+    color: white !important;
+}
+
+.random-color-2 {
+    background-color: #2ecc71 !important;
+    /* Hijau */
+    color: white !important;
+}
+
+.random-color-3 {
+    background-color: #e74c3c !important;
+    /* Merah */
+    color: white !important;
+}
+
+.random-color-4 {
+    background-color: #f39c12 !important;
+    /* Kuning/Oranye */
+    color: white !important;
+}
+
+.random-color-5 {
+    background-color: #9b59b6 !important;
+    /* Ungu */
+    color: white !important;
+}
+
+.random-color-6 {
+    background-color: #1abc9c !important;
+    /* Teal */
+    color: white !important;
+}
+
+.random-color-7 {
+    background-color: #d35400 !important;
+    /* Jingga */
+    color: white !important;
+}
+
+.random-color-8 {
+    background-color: #34495e !important;
+    /* Abu gelap */
+    color: white !important;
+}
+
+.random-color-9 {
+    background-color: #e67e22 !important;
+    /* Jeruk */
+    color: white !important;
+}
+
+.random-color-10 {
+    background-color: #16a085 !important;
+    /* Hijau teal */
+    color: white !important;
+}
+
+/* Warna putih untuk ikon dashboard dan ikon lain di sidebar */
+.sidebar-dark .sidebar-inner .nav .sidenav-item-link i,
+.sidebar-dark .sidebar-inner .nav .sidenav-item-link .mdi {
+    color: white !important;
+}
+
+/* Khusus untuk item aktif di sidebar */
+.sidebar-dark .sidebar-inner .nav .sidenav-item-link:hover i,
+.sidebar-dark .sidebar-inner .nav .sidenav-item-link:hover .mdi,
+.sidebar-dark .sidebar-inner .nav .active>.sidenav-item-link i,
+.sidebar-dark .sidebar-inner .nav .active>.sidenav-item-link .mdi {
+    color: white !important;
+}
+
+.random-color-11 {
+    background-color: #8e44ad !important;
+    /* Ungu gelap */
+    color: white !important;
+}
+
+.random-color-12 {
+    background-color: #2c3e50 !important;
+    /* Biru gelap */
+    color: white !important;
+}
+
+.random-color-13 {
+    background-color: #f1c40f !important;
+    /* Kuning terang */
+    color: white !important;
+}
+
+.random-color-14 {
+    background-color: #e91e63 !important;
+    /* Pink */
+    color: white !important;
+}
+
+.random-color-15 {
+    background-color: #ff9800 !important;
+    /* Oranye */
+    color: white !important;
+}
+
+/*
+ * FINAL FIX: Sidebar Sub-menu Link Color
+ * This rule directly targets the text span within sub-menu links to force the color to white,
+ * overriding the general 'a' tag style.
+ */
+.sidebar-dark .sidebar-inner .nav .sub-menu .sidenav-item-link .nav-text {
+    color: #ffffff !important;
+}
+
+/* Additional rule to ensure white text for package menu items */
+#packages-menu .sub-menu .sidenav-item-link .nav-text,
+#sidebar-menu .sub-menu .sidenav-item-link .nav-text {
+    color: #ffffff !important;
+}
+
+/* Style for active menu items to provide visual feedback */
+#packages-menu .sub-menu li.active .sidenav-item-link,
+#sidebar-menu .sub-menu li.active .sidenav-item-link {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border-left: 3px solid #ffffff;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for menu items */
+#packages-menu .sub-menu .sidenav-item-link:hover,
+#sidebar-menu .sub-menu .sidenav-item-link:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    transition: all 0.3s ease;
+}
+
+/* Pagination text color fix */
+.pagination .page-link {
+    color: #ffffff !important;
+}
+
+.pagination .page-link:hover {
+    color: #ffffff !important;
+    background-color: var(--shafa-primary-dark) !important;
+}
+
+/* Table hover color fix */
+.table-hover>tbody>tr:hover,
+table.dataTable tbody tr:hover {
+    background-color: #FFCDD2 !important;
+}
+
+.table-hover>tbody>tr:hover td,
+table.dataTable tbody tr:hover td {
+    color: var(--shafa-dark-text) !important;
+}
+
+/*
+ * Auth Page Styles
+ * Overrides for login and registration pages to match the Shafa theme.
+ */
+
+/* Body background for auth pages */
+body.auth-page {
+    background: var(--shafa-primary) !important;
+}
+
+/* Auth Card Customization */
+.auth-card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    background: white;
+}
+
+/* Auth Header */
+.auth-header {
+    background: var(--shafa-primary) !important;
+    color: white;
+    padding: 40px 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    animation: pulse 15s ease-in-out infinite;
+}
+
+.auth-title {
+    color: white !important;
+}
+
+.auth-subtitle {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Form Elements */
+.input-icon {
+    color: var(--shafa-primary) !important;
+}
+
+.form-control-lg:focus {
+    border-color: var(--shafa-primary) !important;
+    box-shadow: 0 0 0 4px rgba(122, 0, 0, 0.1) !important;
+}
+
+.toggle-password:hover {
+    color: var(--shafa-primary) !important;
+}
+
+/* Checkbox */
+.custom-checkbox .form-check-input:checked {
+    background-color: var(--shafa-primary) !important;
+    border-color: var(--shafa-primary) !important;
+}
+
+/* Auth Button */
+.btn-auth {
+    background: var(--shafa-primary) !important;
+}
+
+.btn-auth:hover {
+    box-shadow: 0 8px 25px rgba(122, 0, 0, 0.4) !important;
+}
+
+/* Auth Link */
+.auth-link {
+    color: var(--shafa-primary) !important;
+}
+
+.auth-link:hover {
+    color: var(--shafa-primary-dark) !important;
+}
